@@ -1,0 +1,52 @@
+/* General Table Styling */
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-width: 2px;
+    background-color: aliceblue;
+    }
+th, td {
+border: 2px solid rgb(133, 134, 131);
+padding: 20px;
+        }
+
+/* Header Row Styling */
+th {
+font-size: 1.5em;
+background-color: rgb(204, 230, 220);
+}
+
+/* Break, Lunch, and Activities Styling */
+.break, .lunch, .activities, .Morning-preps{
+background-color: rgba(182, 176, 176, 0.959);
+font-weight: bolder;
+}
+/* Time Slot Column */
+td:first-child {
+width: 150px;
+background-color: rgb(231, 221, 221);
+}
+
+/* Day Columns */
+td:nth-child(n+2):nth-child(-n+6) {
+width: 10px;
+}
+/* Ensuring Equal Width for Time Slots */
+td:nth-child(n+2) {
+width: 120px;
+
+}
+
+/* Merging Cells */
+td[colspan="5"] {
+text-align: center;
+}
+
+/* Ensure consistent padding for all content rows */
+td {
+padding: 12px;
+}
